@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;
+	overflow: auto;
+}
+
+.grid_container{
+	display: grid;
+	gap: 10px;
+
+	grid-template-areas: 
+	"header"
+	"main"
+	"sidebar"
+	"footer"
+	;	
+    grid-template: 
+		"header 	header 	header" 	80px 
+		"main 		main 	sidebar" 	auto
+		"main 		main 	sidebar" 	auto
+		"footer 	footer 	footer" 	70px /
+		 300px 		400px 	550px;
+}
+
+.header{
+	grid-area: header;
+	background-color: rgba(202, 169, 222, 0.5);
+}
+
+.header img{
+	width: 330px;
+	float: left;
+	padding-left: 5%;
+	margin-top: 0%;
+}
+
+.main{
+	grid-area: main;
+	background-color: #FFFFfF;
+	margin-left: 10px;
+}
+
+.main img{
+	width: 158%;
+	height: 650px;
+	float: left;
+	margin-left: -40%;
+	margin-top: -3%;
+}
+
+.sidebar{
+	grid-area: sidebar;
+	background-color: #FFFFfF;
+
+}
+
+.footer{
+	grid-area: footer;
+	background-color: rgba(202, 169, 222, 0.5);
+}
+
+#izquierda{
+	width: 33%;
+	height: 30px;
+	float: left;
+}
+#menu2{
+	margin: 0%;
+	padding: 0%;
+}
+
+#menu2 li{
+	display: inline;
+}
+
+#menu2 li a{
+	text-decoration: none;
+	margin-bottom: 15%;
+	padding-left:1%;
+}
+
+.facebook{
+	width: 11%;
+	height: 38px;
+	margin-left: 5%;
+	margin-top:3%;
+	margin-bottom: 13%;
+}
+
+.insta{
+	width: 11%;
+	height: 40px;
+	margin-top: 3%;
+	margin-bottom: 12.9%;
+}
+
+.youtube{
+	width: 11%;
+	height: 45px;
+	margin-top: 3.4%;
+	margin-bottom: 12.3%;
+}
+
+#derecha a p{
+	width: 33%;
+	float: right;
+	margin-right: -5%;
+	margin-bottom: 100%;
+}
+
+.nombre{
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 24px;
+	color: #000000;
+	margin-left: 43%;
+	text-decoration: none;
+
+}
+
+.tipog{
+	width: 700px;
+	height: 100%;
+	background-color: rgba(202, 169, 222, 0.2);
+	border-radius:13px;
+	margin-left: 20%;
+}
+
+.tipog h1{
+	text-align: center;
+	font-size: 35px;
+	padding-top: 3%;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+.tipog p{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 5%;
+	font-family: 'Comfortaa', sans-serif;
+	margin-bottom: 5%;
+}
+
+.holl{
+	width: 700px;
+	height: 90%;
+	background-color: rgba(202, 169, 222, 0.2);
+	border-radius:13px;
+	margin-left: 21%;
+	margin-top: 30%;
+}
+
+.holl img{
+	width: 700px;
+	height: 50%;
+	margin-left: -5%;
+	margin-top: -35%;
+}
+.holl h1{
+	text-align: center;
+	font-size: 35px;
+	margin-top: -20%;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+.capturas a img{
+	width: 600px;
+	height: 100%;
+	margin-left: 25%;
+	margin-bottom: 20%;
+}
+
+.capturas p{
+	text-align: center;
+	font-size: 40px;
+	margin-left: 15%;
+	font-family: 'Comfortaa', sans-serif;
+	margin-left: 15%;
+}
+
+#centro{
+	width: 100%;
+	float: left;
+}
+
+.frase{
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 20px;
+	color: #000000;
+	margin-top: -0.3%;
+	margin-left: 40%;
+	margin-bottom: 0%;
+	text-decoration: none;
+	text-align: center;
+}
+
+.capturas h1{
+	text-align: center;
+	font-size: 40px;
+	padding-left: 30%;
+	margin-top: -5%;
+	font-family: 'Comfortaa', sans-serif;
+	padding-bottom: 20%;
+	
+}
+
+
+@media screen and (min-width:50px) and (max-width: 600px){
+
+	.grid_container{
+ 		
+		grid-template: 
+		"header" 	70px 
+		"main"		auto
+		"main"     auto
+		"sidebar"   auto
+		"footer"	90px /
+		 550px;
+ 	}
+
+
+.header{
+	font-family: 'Comfortaa', sans-serif;
+	text-align: center;
+	padding-top: 3%;
+	font-size: 20px;
+}
+
+.header img{
+	width: 170px;
+	float: left;
+	padding-left: 5%;
+	margin-top: -3%;
+}
+
+.tipog{
+	width: 410px;
+	height: 110%;
+	background-color: rgba(202, 169, 222, 0.2);
+	border-radius:13px;
+	margin-left: 10%;
+}
+
+.tipog h1{
+	text-align: center;
+	font-size: 35px;
+	padding-top: 3%;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+.tipog p{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 5%;
+	font-family: 'Comfortaa', sans-serif;
+	margin-bottom: 5%;
+}
+
+.holl{
+	width: 300px;
+	height: 40%;
+	background-color: rgba(202, 169, 222, 0.2);
+	border-radius:13px;
+	margin-left: 20%;
+	margin-top: 30%;
+}
+
+.holl img{
+	width: 500px;
+	height: 410%;
+	margin-left: -30%;
+	margin-top: -50%;
+}
+.holl h1{
+	text-align: center;
+	font-size: 35px;
+	margin-top: -20%;
+	font-family: 'Comfortaa', sans-serif;
+}
+#derecha a p{
+	width: 33%;
+	float: right;
+	margin-right: -5%;
+	margin-bottom: 100%;
+}
+
+.nombre{
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 24px;
+	color: #000000;
+	margin-left: 25%;
+	text-decoration: none;
+
+}
+
+.capturas a img{
+	width: 400px;
+	height: 100%;
+	margin-left: 2%;
+	margin-bottom: 20%;
+}
+
+.capturas p{
+	text-align: center;
+	font-size: 40px;
+	margin-left: 0%;
+	font-family: 'Comfortaa', sans-serif;
+	margin-left: 15%;
+}
+.tit h1{
+	text-align: center;
+	font-size: 50px;
+	padding-top: -40%;
+	padding-left: 90%;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+ }
+
+@media screen and (min-width:540px) and (max-width: 960px){
+
+	.grid_container{
+ 		
+		grid-template: 
+		"header 	header" 	80px 
+		"main 	    sidebar"	auto
+		"main 		sidebar"	auto
+		"footer 	footer" 	80px /
+		 550px 		450px;
+ 	}
+
+.header{
+	font-family: 'Comfortaa', sans-serif;
+	text-align: center;
+	padding-top: 3%;
+	font-size: 20px;
+}
+
+.header img{
+	width: 240px;
+	float: left;
+	padding-left: 5%;
+	margin-top: -3%;
+}
+
+.tipog{
+	width: 700px;
+	height: 30%;
+	background-color: rgba(202, 169, 222, 0.2);
+	border-radius:13px;
+	margin-left: 20%;
+}
+
+.tipog h1{
+	text-align: center;
+	font-size: 35px;
+	padding-top: 3%;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+.tipog p{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 5%;
+	font-family: 'Comfortaa', sans-serif;
+	margin-bottom: 5%;
+}
+
+.holl{
+	width: 700px;
+	height: 40%;
+	background-color: rgba(202, 169, 222, 0.2);
+	border-radius:13px;
+	margin-left: 21%;
+	margin-top: 30%;
+}
+
+.holl img{
+	width: 700px;
+	height: 170%;
+	margin-left: -5%;
+	margin-top: -25%;
+}
+.holl h1{
+	text-align: center;
+	font-size: 35px;
+	margin-top: -20%;
+	font-family: 'Comfortaa', sans-serif;
+}
+#derecha a p{
+	width: 33%;
+	float: right;
+	margin-right: -5%;
+	margin-bottom: 100%;
+}
+
+.nombre{
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 24px;
+	color: #000000;
+	margin-left: 25%;
+	text-decoration: none;
+
+}
+
+}
+
+@media (min-width: 1000px) {
+
+	.grid_container{
+		grid-template: 
+		"header 	header 	header" 	120px 
+		"navbar 	main 	sidebar" 	auto
+		"navbar 	main 	sidebar" 	auto
+		"footer 	footer 	footer" 	70px /
+		 190px 		auto 	550px;
+	}
+}
+
+
+
+
+
